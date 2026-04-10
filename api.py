@@ -5,10 +5,7 @@ import os
 
 app = Flask(__name__)
 
-# ---------------- LOAD MODEL ONCE ---------------- #
 model = YOLO("yolov8n.pt")
-
-# absolute path (safe)
 image_path = os.path.join("images", "traffic.jpg")
 
 @app.route("/traffic")
@@ -18,17 +15,14 @@ def get_traffic_data():
         total_pcu = calculate_pcu(vehicle_count)
         green_time = calculate_signal(total_pcu)
 
-        data = {
+        return jsonify({
             "vehicle_count": vehicle_count,
             "pcu": total_pcu,
             "signals": green_time
-        }
-
-        return jsonify(data)
+        })
 
     except Exception as e:
         return jsonify({"error": str(e)})
 
-# ---------------- RUN ---------------- #
 if __name__ == "__main__":
     app.run(debug=True, use_reloader=False)
