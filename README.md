@@ -106,35 +106,53 @@ python api.py
 Bash
 streamlit run user_app.py
 
-📊 Example Output
-Total PCU: 8
-Signal Timing:
-Road A → 60 sec
-Road B → 36 sec
-Road C → 18 sec
-Road D → 10 sec
+## 📊 Example Output
+
+**Total PCU:** 8
+
+**Signal Timing:**
+
+* Road A → 60 sec
+* Road B → 36 sec
+* Road C → 18 sec
+* Road D → 10 sec
 
 
-📁 Project Structure
 
-├── main.py              # AI logic (detection + PCU + signal)
-├── api.py               # Flask API
-├── user_app.py          # Streamlit UI
-├── images/              # Sample input images
-├── yolov8n.pt           # Model
+## 📁 Project Structure
 
+```bash
+├── main.py        # AI logic (detection + PCU + signal)
+├── api.py         # Flask API
+├── user_app.py    # Streamlit UI
+├── images/        # Sample input images
+├── yolov8n.pt     # Model
+```
 
-🏆 Achievement
-🏅 4Th  – Impact Dhaka 2026 Hackathon
+---
 
+## 🏆 Achievement
 
-👨‍💻 Team
-Team Name: Mind Stack
-Team Lead: Md. Jakaria Khalasi
-Members: Nazmul Hasan,  Md Hasan Mahmud
+🏅 **4th Place – Impact Dhaka 2026 Hackathon**
 
+---
 
-📜 License
+## 👨‍💻 Team
+
+**Team Name:** Mind Stack
+
+**Team Lead:**
+
+* Md. Jakaria Khalasi
+
+**Members:**
+
+* Nazmul Hasan
+* Md Hasan Mahmud
+
+---
+
+## 📜 License
+
 This project is for educational and research purposes.
-
 
